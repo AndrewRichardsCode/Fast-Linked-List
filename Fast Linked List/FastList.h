@@ -6,6 +6,7 @@
 
 class FastList
 {
+public:
 	FastList() = delete;
 	FastList(const unsigned int maxNumNodes);
 	~FastList();

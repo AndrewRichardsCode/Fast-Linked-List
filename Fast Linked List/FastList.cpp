@@ -47,9 +47,11 @@ HotNode* FastList::push_back() {
 }
 
 void FastList::printList() {
+	unsigned int i = 1;
 	HotNode* tmp = this->GetHotHead();
 	while (tmp != nullptr) {
-		printf("%d\n", tmp->key);
+		printf("Node: %d HotKey:%d\n", i, tmp->key);
 		tmp = tmp->pNext;
+		i++;
 	}
 }
