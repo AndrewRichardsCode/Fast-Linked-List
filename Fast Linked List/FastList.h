@@ -17,6 +17,7 @@ public:
 	HotNode* GetHotHead() const;
 	HotNode* push_back();
 	void printList();
+	//void convertToFast();
 
 private:
 	HotNode* pHotHead;
