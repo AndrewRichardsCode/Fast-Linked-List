@@ -16,7 +16,6 @@ public:
 	bool FindKey(unsigned int key);
 	HotNode* push_back();
 	void printList();
-	//void convertToFast();
 
 private:
 	HotNode* pHotHead;

@@ -13,15 +13,15 @@ public:
 	ColdNode& operator = (const ColdNode&) = default;
 	~ColdNode() = default;
 
+	//example data
 	HotNode* pHot;
-
+	int		a;
+	int		b;
+	int		c;
 	float	x;
 	float	y;
 	float	z;
-	//more example data
-
-
-
+	
 };
 
 #endif

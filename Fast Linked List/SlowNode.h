@@ -6,13 +6,15 @@ class SlowNode
 {
 public:
 	SlowNode();
-	SlowNode(unsigned int key);
 	SlowNode(const SlowNode&) = default;
 	SlowNode& operator = (const SlowNode&) = default;
 	~SlowNode() = default;
 
 	//Data:
 	SlowNode* pNext;
+	int		a;
+	int		b;
+	int		c;
 	float	x;
 	float	y;
 	SlowNode* pPrev;

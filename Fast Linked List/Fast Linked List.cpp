@@ -18,8 +18,9 @@ int main()
 	slowTimer.StartTimer();
 	SlowList* list = new SlowList();
 	SlowNode* slowNode;
-	for (unsigned int i = 1; i < totalNodes; i++) {
+	for (unsigned int i = 0; i < totalNodes; i++) {
 		slowNode = new SlowNode();
+		slowNode->key = i;
 		list->push_back(slowNode);
 	}
 	bool found = list->FindKey(slowNode->key);
@@ -33,8 +34,9 @@ int main()
 	fastTimer.StartTimer();
 	HotNode* newNode;
 	FastList* list2 = new FastList(totalNodes);
-	for (unsigned int i = 1; i < totalNodes; i++) {
+	for (unsigned int i = 0; i < totalNodes; i++) {
 		newNode = list2->push_back();
+		newNode->key = i;
 	}
 	bool found2 = list2->FindKey(newNode->key);
 	delete list2;

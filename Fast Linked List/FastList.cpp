@@ -7,8 +7,6 @@ FastList::FastList(const unsigned int maxNumNodes)
 	this->pHotHead = new HotNode[maxNumNodes];
 	this->pColdHead = new ColdNode[maxNumNodes];
 
-	//this->pHotHead->pCold = this->pColdHead;
-	//this->pColdHead->pHot = this->pHotHead;
 	this->pFreeHotNode = this->pHotHead;
 	this->pFreeColdNode = this->pColdHead;
 }
