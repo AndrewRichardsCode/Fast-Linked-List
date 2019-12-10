@@ -46,7 +46,7 @@ void SlowList::printList() {
 	unsigned int i = 1;
 	SlowNode* tmp = this->pHead;
 	while (tmp != nullptr) {
-		printf("Node: %d HotKey:%d\n", i, tmp->key);
+		printf("Node: %d Key:%d\n", i, tmp->key);
 		tmp = tmp->pNext;
 		i++;
 	}

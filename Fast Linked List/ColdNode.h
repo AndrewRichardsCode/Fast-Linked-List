@@ -14,6 +14,7 @@ public:
 	~ColdNode() = default;
 
 	HotNode* pHot;
+
 	float	x;
 	float	y;
 	float	z;
