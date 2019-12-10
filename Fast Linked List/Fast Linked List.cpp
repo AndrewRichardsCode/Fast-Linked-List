@@ -1,5 +1,8 @@
 #include "FastList.h"
 #include "HotNode.h"
+#include "Timer.h"
+#include "SlowNode.h"
+#include "SlowList.h"
 
 int main()
 {
