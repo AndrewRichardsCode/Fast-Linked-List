@@ -45,8 +45,8 @@ int main()
 	//-------------------------------------------
 	//Print Results
 	//-------------------------------------------
-	printf("Regular Linked List:	%.2fms\n\n", slowTime);
-	printf("Fast Linked List:	%.2fms\n\n", fastTime);
+	printf("Find Key in Regular Linked List:	%.2fms\n\n", slowTime);
+	printf("Find Key in Fast Linked List:		%.2fms\n\n", fastTime);
 	printf("%.2f times faster\n",  slowTime / fastTime);
 }
 
