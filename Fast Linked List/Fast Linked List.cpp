@@ -4,6 +4,7 @@
 #include "SlowNode.h"
 #include "SlowList.h"
 #include <stdio.h>
+#include <list>
 
 //DEMO - walks the lists to find the key in the last Node and prints time
 int main()
@@ -13,9 +14,8 @@ int main()
 	const unsigned int totalNodes = 300000;
 
 	//-------------------------------------------
-	//Create SlowList
+	//Create SlowList and find key
 	//-------------------------------------------
-	slowTimer.StartTimer();
 	SlowList* list = new SlowList();
 	SlowNode* slowNode;
 	for (unsigned int i = 0; i < totalNodes; i++) {
@@ -23,26 +23,25 @@ int main()
 		slowNode->key = i;
 		list->push_back(slowNode);
 	}
+	slowTimer.StartTimer();
 	bool found = list->FindKey(slowNode->key);
-	delete list;
 	slowTimer.StopTimer();
 	float slowTime = slowTimer.TimeInSeconds() * 1000.0f;
-
+	delete list;
 	//---------------------------------------------
-	//Create FastList
+	//Create FastList and find Key
 	//-------------------------------------------
-	fastTimer.StartTimer();
 	HotNode* newNode;
 	FastList* list2 = new FastList(totalNodes);
 	for (unsigned int i = 0; i < totalNodes; i++) {
 		newNode = list2->push_back();
 		newNode->key = i;
 	}
+	fastTimer.StartTimer();
 	bool found2 = list2->FindKey(newNode->key);
-	delete list2;
 	fastTimer.StopTimer();
 	float fastTime = fastTimer.TimeInSeconds() * 1000.0f;
-
+	delete list2;
 	//-------------------------------------------
 	//Print Results
 	//-------------------------------------------
