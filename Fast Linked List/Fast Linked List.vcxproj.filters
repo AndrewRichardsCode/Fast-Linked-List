@@ -27,6 +27,12 @@
     <ClCompile Include="ColdNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SlowList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SlowNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FastList.h">
@@ -36,6 +42,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ColdNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SlowList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SlowNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

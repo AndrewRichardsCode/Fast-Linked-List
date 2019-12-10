@@ -14,7 +14,6 @@ public:
 	FastList& operator = (const FastList&) = delete;
 
 	bool FindKey(unsigned int key);
-	HotNode* GetHotHead() const;
 	HotNode* push_back();
 	void printList();
 	//void convertToFast();

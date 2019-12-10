@@ -6,6 +6,7 @@ class SlowNode
 {
 public:
 	SlowNode();
+	SlowNode(unsigned int key);
 	SlowNode(const SlowNode&) = default;
 	SlowNode& operator = (const SlowNode&) = default;
 	~SlowNode() = default;

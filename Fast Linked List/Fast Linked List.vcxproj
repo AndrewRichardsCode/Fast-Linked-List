@@ -155,11 +155,15 @@
     <ClCompile Include="Fast Linked List.cpp" />
     <ClCompile Include="FastList.cpp" />
     <ClCompile Include="HotNode.cpp" />
+    <ClCompile Include="SlowList.cpp" />
+    <ClCompile Include="SlowNode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ColdNode.h" />
     <ClInclude Include="FastList.h" />
     <ClInclude Include="HotNode.h" />
+    <ClInclude Include="SlowList.h" />
+    <ClInclude Include="SlowNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

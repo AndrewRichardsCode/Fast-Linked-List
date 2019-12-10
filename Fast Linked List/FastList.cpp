@@ -18,14 +18,9 @@ FastList::~FastList() {
 	delete[] this->pColdHead;
 }
 
-
-HotNode* FastList::GetHotHead() const {
-	return this->pHotHead;
-}
-
 bool FastList::FindKey(unsigned int key)
 {
-	HotNode* tmp = this->GetHotHead();
+	HotNode* tmp = this->pHotHead;
 	while (tmp != nullptr) {
 		if (tmp->key == key) {
 			return true;
@@ -48,7 +43,7 @@ HotNode* FastList::push_back() {
 
 void FastList::printList() {
 	unsigned int i = 1;
-	HotNode* tmp = this->GetHotHead();
+	HotNode* tmp = this->pHotHead;
 	while (tmp != nullptr) {
 		printf("Node: %d HotKey:%d\n", i, tmp->key);
 		tmp = tmp->pNext;
