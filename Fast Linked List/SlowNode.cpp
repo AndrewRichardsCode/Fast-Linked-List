@@ -21,27 +21,7 @@ SlowNode::SlowNode()
 	this->n = rand();
 	this->o = rand();
 	this->p = rand();
-	this->q = rand();
-	this->r = rand();
-	this->s = rand();
-	this->t = rand();
-	this->u = rand();
-	this->v = rand();
-	this->w = rand();
-	this->x = rand();
-	this->y = rand();
-	this->z = rand();
-
-	this->ex1 = rand();
-	this->ex2 = rand();
-	this->ex3 = rand();
-	this->ex4 = rand();
-	this->ex5 = rand();
-	this->ex6 = rand();
-	this->ex7 = rand();
-	this->ex8 = rand();
-	this->ex9 = rand();
-	this->ex10 = rand();
+	
 
 	this->key = 0;
 }
